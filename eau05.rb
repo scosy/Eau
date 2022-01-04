@@ -8,7 +8,6 @@ end
 def split_strings(string1, string2)
   @array = []
   @array.push string1.split(''); @array.push string2.split('')
-  @array
 end
 
 def string_includes(string1, string2)
