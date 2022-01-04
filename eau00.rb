@@ -2,7 +2,7 @@
 #  dans l’ordre croissant. La répétition est volontaire.
 
 # Fonction utilisée
-def three_numbers_combination
+def three_figures_combination
   range = *("000".."999")
   result = []
 
@@ -15,7 +15,7 @@ def three_numbers_combination
 end
 
 #Résolution
-combinations = three_numbers_combination
+combinations = three_figures_combination
 
 # Affichage
 puts combinations
