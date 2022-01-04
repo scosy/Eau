@@ -6,7 +6,7 @@ def three_figures_combination
   range = *("000".."999")
   result = []
 
-  range.map!.with_index do |element, index|
+  range.map! do |element|
     if element.count(element[0]) == 1 && element.count(element[1]) == 1
       !result.include?(element.chars.sort.join) ? (result.push(element.chars.sort.join)) : ()
     end
