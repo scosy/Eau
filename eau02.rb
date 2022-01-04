@@ -8,7 +8,7 @@ def reverse_arguments(*args)
 end
 
 # Gestion d'erreurs
-(ARGV.length == 0) ? (puts "erreur") : ()
+puts "erreur" if ARGV.length == 0
 
 # Résolution
 result = reverse_arguments(ARGV)
