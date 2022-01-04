@@ -18,8 +18,8 @@ def prime_number(number)
 end
 
 # Gestion d'erreur
-puts "-1" if ARGV.length != 1
-puts "-1" unless is_numeric_and_positive(ARGV[0])
+puts "-1" if ARGV.length != 1; exit
+puts "-1" unless is_numeric_and_positive(ARGV[0]); exit
 
 # Parsing
 number = ARGV[0].to_i

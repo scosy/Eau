@@ -14,8 +14,8 @@ def fibonacci_suite(number)
 end
 
 # Gestion d'erreurs
-puts "erreur" if ARGV.length != 1
-puts "-1" unless is_numeric_and_positive(ARGV[0])
+puts "erreur" if ARGV.length != 1; exit
+puts "-1" unless is_numeric_and_positive(ARGV[0]); exit
 
 # Parsing
 n = ARGV[0].to_i
