@@ -23,12 +23,15 @@ def my_select_sort(array)
     end
     (min != ind) ? (array.insert(ind, array.slice!(min))) : ()
   end
-  array
+  array.join(" ")
 end
 
 # Gestion d'erreurs
 (puts "error"; exit) if !only_numbers(ARGV)
 (puts "error"; exit) if ARGV.size < 2
 
+# Parsing
+number = ARGV.map! { |e| e.to_i }
+
 # Affichage
-puts my_select_sort(ARGV)
+puts my_select_sort(number)
