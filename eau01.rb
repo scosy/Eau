@@ -9,14 +9,13 @@ def two_numbers_combination
   range1.map! do |n1|
     range2.map do |n2|
       if n1 != n2
-        n1.chars.sort.join; n2.chars.sort.join
-        if !result.include?("#{n2} #{n1}".split(' ').sort.join(', '))
-          result << "#{n2} #{n1}".split(' ').sort.join(', ')
+        if !result.include?("#{n2} #{n1}".split(' ').sort.join(' '))
+          result << "#{n2} #{n1}".split(' ').sort.join(' ')
         end
       end
     end
   end
-    result
+    result.join(', ')
 end
 
 # Résolution
