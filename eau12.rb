@@ -14,7 +14,7 @@ def only_numbers(array)
   are_numbers
 end
 
-def sort_values(array)
+def my_bubble_sort(array)
   range = (array.size - 1)..1
   (range.first).downto((range).last).each do |ind|
     is_sorted = true
@@ -30,8 +30,5 @@ end
 (puts "error"; exit) if !only_numbers(ARGV)
 (puts "error"; exit) if ARGV.size < 2
 
-# Résolution
-bubble_sort = sort_values(ARGV)
-
 # Affichage
-puts bubble_sort
+puts my_bubble_sort(ARGV)
