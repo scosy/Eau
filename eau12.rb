@@ -10,7 +10,7 @@
 def only_numbers(array)
   are_numbers = true
   count = 0
-  array.each { |c| (c.count("0-9\\-0-\\-9") == c.size) ? () : (!are_numbers; break) }
+  array.each { |c| (c.count("0-9\\-0-\\-9") == c.size) ? () : (are_numbers = false; break) }
   are_numbers
 end
 
