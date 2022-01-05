@@ -11,7 +11,7 @@ def three_figures_combination
       !result.include?(element.chars.sort.join) ? (result.push(element.chars.sort.join)) : ()
     end
   end
-  result
+  result.join(" ")
 end
 
 #Résolution
